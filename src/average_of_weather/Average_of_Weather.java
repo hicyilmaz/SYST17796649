@@ -27,15 +27,38 @@ public class Average_of_Weather {
             }
             
         }
-        
+         
         //Calculate average_Degree and show
-         System.out.printf("The AVERAGE DEGREE  is %.2f in the the week ", (calcAverage=(double)(total)/degrees.length));
         
+         System.out.printf("The AVERAGE DEGREE  is %.2f in the the week ", (calcAverage=(double)(total)/degrees.length));
+         
+         // Show max degree in the week
+         calcMax(degrees);
+         System.out.println("The highest degree in the week"+ calcMax(degrees));
+         
          // Show the extreme_Degrees
          System.out.println("\nNOTE:The Degrees shown below  are not included in the average!!!");
          for(int e:extreme_Degrees){
          System.out.print(e+" ");
          }
+              
     }
-
+public  static double calcMax(int list[]){
+         
+    int max=list[0];
+        for(int i=0;i<list.length;i++){
+         
+          if(list[i]>max){
+          list[i]=max;
+          }          
+        }
+        return max;
 }
+}    
+
+         
+        
+         
+         
+
+
