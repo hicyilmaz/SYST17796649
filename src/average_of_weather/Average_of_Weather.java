@@ -34,7 +34,7 @@ public class Average_of_Weather {
          
          // Show max degree in the week
          calcMax(degrees);
-         System.out.println("The highest degree in the week"+ calcMax(degrees));
+         System.out.println("The highest degree in the week "+ calcMax(degrees));
          
          // Show the extreme_Degrees
          System.out.println("\nNOTE:The Degrees shown below  are not included in the average!!!");
@@ -46,10 +46,10 @@ public class Average_of_Weather {
 public  static double calcMax(int list[]){
          
     int max=list[0];
-        for(int i=0;i<list.length;i++){
+        for(int i=1;i<list.length;i++){
          
-          if(list[i]>max){
-          list[i]=max;
+            if(list[i]>max){
+          max=list[i];
           }          
         }
         return max;
