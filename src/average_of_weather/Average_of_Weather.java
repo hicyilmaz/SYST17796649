@@ -14,7 +14,7 @@ public class Average_of_Weather {
         ArrayList<Integer> extreme_Degrees = new ArrayList<>();
 
         //Random values between -100 and +100
-        System.out.println("Degrees less than (-50) and greater than (+50) in the week are shown, but are not included the average );
+        System.out.println("Degrees less than (-50) and greater than (+50) in the week are shown, but are not included the average" );
         System.out.println("All degrees in the week");
         for (int i = 0; i<14; i++) {
 
